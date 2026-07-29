@@ -56,6 +56,24 @@ hl.window_rule({
 --     no_anim = true,
 -- })
 -- overlayLayerRule:set_enabled(false)
+-- Apply entrance/exit animations
+hl.layer_rule({
+  match = { namespace = "swaync-control-center" },
+  animation = "slide right" -- Options: "slide right", "slide left", "popin", "fade", etc.
+})
+
+hl.layer_rule({
+  match = { namespace = "swaync-notification-window" },
+  animation = "slide right"
+})
+
+-- Optional: Add background blur behind the control center
+hl.layer_rule({
+  match = { namespace = "swaync-control-center" },
+  blur = true,
+  ignore_alpha = 0.5
+})
+
 
 -- Hyprland-run windowrule
 hl.window_rule({
