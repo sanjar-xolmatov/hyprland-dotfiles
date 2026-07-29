@@ -6,9 +6,8 @@ function fish_greeting
 end
 
 alias hx="helix"
+alias vim="nvim"
+alias z="zoxide"
 
 starship init fish | source
 
-if status is-interactive
-    keychain --eval --agents ssh id_ed25519 | source
-end
