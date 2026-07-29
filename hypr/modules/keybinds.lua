@@ -46,7 +46,13 @@ hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd('grim - | satty -f - --copy-comma
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("cliphist list | rofi -dmenu | cliphist decode | wl-copy"));
 
 -- Reload Waybar
-hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("~/.config/waybar/scripts/script.sh"))
+hl.bind(mainMod .. " + CTRL + W", hl.dsp.exec_cmd("~/.config/hypr/scripts/reload_waybar.sh"))
+
+-- Reload swaync
+hl.bind(mainMod .. " + CTRL + S", hl.dsp.exec_cmd("~/.config/hypr/scripts/reload_swaync.sh"))
+
+-- Toggle swaync
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("swaync-client -t"))
 
 -- Fullscreen
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ action = "toggle" }))
