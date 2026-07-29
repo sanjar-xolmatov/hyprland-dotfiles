@@ -6,42 +6,67 @@
 local terminal    = "kitty"
 local fileManager = "nautilus"
 local menu = "rofi -show"
+local browser = "helium-browser"
+
 ---------------------
 ---- KEYBINDINGS ----
 ---------------------
 
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
--- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
+-- Open default terminal
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
+
+-- Close Window
 local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
--- closeWindowBind:set_enabled(false)
+
+-- Exit Hyprland
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
+
+-- Open default file manager
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
+
+-- Toggle floating
 hl.bind("SUPER+T", hl.dsp.window.float({ action = "toggle" }))
+
+-- Launch default application launcher
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(menu))
+
+-- I do not know what it is, so I did not touch this line
 hl.bind(mainMod .. " + SHIFT + P", hl.dsp.window.pseudo())
+
+-- Same for this
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 
+-- Screenshots
 hl.bind("Print", hl.dsp.exec_cmd('grim -g "$(slurp)" - | satty -f - --copy-command wl-copy -o "~/Pictures/Screenshots/%Y%m%d_%H%M%S.png"'))
 hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd('grim - | satty -f - --copy-command wl-copy -o "~/Pictures/Screenshots/%Y%m%d_%H%M%S.png"'))
 
+-- Clipboard
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("cliphist list | rofi -dmenu | cliphist decode | wl-copy"));
 
+-- Reload Waybar
 hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("~/.config/waybar/scripts/script.sh"))
 
+-- Fullscreen
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ action = "toggle" }))
 
+-- Switch between apps acrross different workspaces
 hl.bind("ALT + Tab", hl.dsp.exec_cmd("snappy-switcher next --mod alt"))
 
+-- Switch between apps in the current workspace
 hl.bind("SUPER + TAB", hl.dsp.exec_cmd("snappy-switcher next --workspace --mod super"))
 
-hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("helium-browser"))
+-- Open Browser
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 
+-- Pick a color
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("hyprpicker -a"))
 
+-- Lock screen
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 
+-- Minimize apps
 hl.bind("SUPER + F1", function ()
     local game_mode = (hl.get_config("animations.enabled") == false)
 
