@@ -136,4 +136,5 @@ hl.window_rule({
 hl.window_rule({
     match = { float = true },
     size = {1000, 600},
+    center = true,
 })

@@ -8,6 +8,7 @@ end
 alias hx="helix"
 alias vim="nvim"
 alias z="zoxide"
+alias fastfetch="fastfetch --config hypr"
 
 starship init fish | source
 
