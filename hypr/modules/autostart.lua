@@ -4,6 +4,8 @@
 hl.on("hyprland.start", function ()
   -- hl.exec_cmd()
   hl.exec_cmd("wl-paste --watch cliphist store")
+  hl.exec_cmd("udiskie &")
+  hl.exec_cmd("exec swayosd-server")
   hl.exec_cmd("exec swaync")
   hl.exec_cmd("snappy-switcher --daemon")
   hl.exec_cmd("blueman-applet")
