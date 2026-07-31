@@ -1,14 +1,18 @@
 # My Simple Hyprland dotfiles
 
-## Preview
+## **Preview**
 
-:::gallery
-![preview_1](./assets/20260728_160708.png)
-![preview_2](./assets/20260731_062901.png)
-![preview_3](./assets/20260731_063031.png)
-![preview_4](./assets/20260728_160708.png)
-![preview_5](./assets/20260731_063116.png)
-:::
+| **Preview** | **Application Launcher** |
+| ----- | ----- |
+| ![preview](./assets/preview.png) | ![rofi](./assets/application-launcher.png) |
+
+| **Browser** | **Calender** |
+| ----- | ----- |
+| ![helium](./assets/browser.png) | ![calender](./assets/calendar.png) |
+
+| **Kitty** | **Notification Center** |
+| ----- | ----- |
+| ![kitty](./assets/kitty.png) | ![swaync](./assets/notification-center.png) |
 
 ## My prefered programs
 
@@ -39,4 +43,3 @@ Screenshots: [satty](https://github.com/Satty-org/Satty), [grim](https://gitlab.
 Clipboard history: [cliphist](https://github.com/sentriz/cliphist)
 
 Authentication Agent: [hyprpolkitagent](https://wiki.hypr.land/Hypr-Ecosystem/hyprpolkitagent)
-
