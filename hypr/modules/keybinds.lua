@@ -29,6 +29,9 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 -- Toggle floating
 hl.bind("SUPER+T", hl.dsp.window.float({ action = "toggle" }))
 
+-- OBS
+hl.bind("SUPER + F10", hl.dsp.pass({ window = "class:^(com\\.obsproject\\.Studio)$" }))
+
 -- Launch default application launcher
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(menu))
 

@@ -2,9 +2,13 @@
 
 ## Preview
 
+:::gallery
 ![preview_1](./assets/20260728_160708.png)
-
-![preview_2](./assets/20260728_160722.png)
+![preview_2](./assets/20260731_062901.png)
+![preview_3](./assets/20260731_063031.png)
+![preview_4](./assets/20260728_160708.png)
+![preview_5](./assets/20260731_063116.png)
+:::
 
 ## My prefered programs
 
