@@ -12,11 +12,12 @@
   "modules-right": [
     "group/expand",
     "tray",
+    "custom/airpods",
     "pulseaudio#source",
     "battery",
     "memory",
     "disk",
-    "clock",
+    "clock"
   ],
   "reload_style_on_change": true,
 
@@ -113,4 +114,10 @@
    		}
    	},
   },
+  "custom/airpods": {
+    "exec": "airpods-tui --waybar-watch",
+    "return-type": "json",
+    "format": "󰎈 {}",
+    "on-click": "omarchy-launch-or-focus-tui airpods-tui"
+  }
 }

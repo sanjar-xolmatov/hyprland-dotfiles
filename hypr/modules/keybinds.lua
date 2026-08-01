@@ -32,6 +32,12 @@ hl.bind("SUPER+T", hl.dsp.window.float({ action = "toggle" }))
 -- OBS
 hl.bind("SUPER + F10", hl.dsp.pass({ window = "class:^(com\\.obsproject\\.Studio)$" }))
 
+-- AirPods TUI 
+hl.bind(mainMod .. " + CTRL + A", hl.dsp.exec_cmd("kitty --class airpods-tui-float -e airpods-tui"))
+
+-- rmpc
+hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("kitty --class rmpc-float -e rmpc"))
+
 -- Launch default application launcher
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(menu))
 

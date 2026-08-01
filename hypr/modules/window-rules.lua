@@ -138,3 +138,12 @@ hl.window_rule({
     size = {1000, 600},
     center = true,
 })
+
+hl.window_rule({
+    match = { class = "airpods-tui-float" },
+
+    float = true,
+    center = true,
+    size = {800, 600},
+})
+
