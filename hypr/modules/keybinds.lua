@@ -28,6 +28,8 @@ hl.bind("SUPER + g", function()
     hl.plugin.scrolloverview.overview("toggle all")
 end)
 
+hl.bind(mainMod .. " + CTRL + L", hl.dsp.exec_cmd("~/.config/hypr/scripts/logout.sh"))
+
 -- Open default file manager
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 
