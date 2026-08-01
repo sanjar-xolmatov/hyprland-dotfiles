@@ -12,7 +12,15 @@
 
 | **Kitty** | **Notification Center** |
 | ----- | ----- |
-| ![kitty](./assets/kitty.png) | ![swaync](./assets/notification-center.png) |
+| ![kitty](./assets/kitty.png) | ![swaync](./assets/notifications.png) |
+
+| **Music Player** | **Neovim** |
+| ----- | ----- |
+| ![music_player](./assets/music_player.png) | ![neovim](./assets/nvim.png) |
+
+| **Overview** |
+| ----- |
+| ![overview](./assets/overview.png) |
 
 ## My prefered programs
 
@@ -43,3 +51,5 @@ Screenshots: [satty](https://github.com/Satty-org/Satty), [grim](https://gitlab.
 Clipboard history: [cliphist](https://github.com/sentriz/cliphist)
 
 Authentication Agent: [hyprpolkitagent](https://wiki.hypr.land/Hypr-Ecosystem/hyprpolkitagent)
+
+Music Player: [rmcp](https://github.com/mierak/rmpc)

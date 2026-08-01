@@ -4,7 +4,7 @@
 
 -- Set programs that you use
 local terminal    = "kitty"
-local fileManager = "nautilus"
+local fileManager = "kitty --class yazi-file-manager -e yazi"
 local menu = "rofi -show"
 local browser = "helium-browser"
 
