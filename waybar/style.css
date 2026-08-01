@@ -177,3 +177,11 @@ menu menuitem:hover {
     background-color: @red;
     border-radius: 8px;
 }
+
+#custom-airpods {
+  background-image: url("/home/sanjar/.config/waybar/airpods.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 18px 18px; /* Adjust size to fit your bar height */
+  padding-left: 24px; /* Adjust based on icon size + desired gap */
+}

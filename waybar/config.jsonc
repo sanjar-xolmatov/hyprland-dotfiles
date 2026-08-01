@@ -117,7 +117,7 @@
   "custom/airpods": {
     "exec": "airpods-tui --waybar-watch",
     "return-type": "json",
-    "format": "󰎈 {}",
-    "on-click": "omarchy-launch-or-focus-tui airpods-tui"
+    "format": " {}",
+    "on-click": "kitty --class airpods-tui-float -e airpods-tui"
   }
 }
