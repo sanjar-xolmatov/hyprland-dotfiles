@@ -7,3 +7,5 @@ require("modules.autostart")
 require("modules.env")
 require("modules.look-and-feel")
 require("modules.window-rules")
+require("modules.plugins")
+

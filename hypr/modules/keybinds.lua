@@ -23,6 +23,11 @@ local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 -- Exit Hyprland
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 
+-- Niri overview
+hl.bind("SUPER + g", function()
+    hl.plugin.scrolloverview.overview("toggle all")
+end)
+
 -- Open default file manager
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 
